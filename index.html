@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Biat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myjava.js"></script>
+</head>
+
+<body>
+    <h1>إضافه طالب</h1>
+    <form onsubmit="return false;" method="post" name="myForm">
+
+        <div class="container">
+            <center>
+                <label for="name"><b>اسم المستخدم</b></label>
+                <input type="text" placeholder="ادخل اسم المستخدم" ,id="username" , name="username" pattern="[a-z]+_+.*[0-9]" required>
+
+                <label for="student"><b>اسم الطالب </b></label>
+                <input type="text" placeholder="ادخل اسم الطالب" ,id="namestudent" , name="namestudent" pattern=".*[ء-ي]" required>
+                <label for="date"><b>تاريخ الولاده</b>
+        <br></label>
+                <input type="text" placeholder="mm/dd/yyyy" id="datestd" , name="datestd" pattern="(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}" required>
+                <br>
+                <label for="pro">البرنامج</label> <br>
+                <select name="proo" id="programselected">
+  <option value="BIT">BIT</option>
+   <option value="TIC">TIC</option>
+
+</select>
+                <br> <label for="phone"><b> الموبايل </b></label>
+                <input type="text" placeholder="09639123456789" ,id="phone" ,name="phone" pattern="\+[0-9]{3}[0-9]{9}" value="+963" required>
+                <label for="verification"><b> يرجى ادخال رمز تحقق الكابتشا</b></label>
+
+                <input type="text" id="txtCaptcha" style="text-align: center; border: none; font-weight: bold; font-size: 20px; font-family: Modern" />
+                <input type="text" id="txtCompare" required/>
+                <input type="button" id="btnrefresh" type="button" style="font-size: 18px;" value="تحديث الرمز " onclick="GenerateCaptcha();" />
+                <button name="submit" onclick="myFunction()"> إضافه وارسال البيانات</button>
+            </center>
+
+    </form>
+    </div>
+
+
+
+    <h1> جدول اسماء الطلاب </h1>
+    <center>
+        <h4><label for="pro">البرنامج</label></h4>
+    </center>
+    <center>
+        <select onchange="scheduleA.call(this, event)" name="proo" id="programflitter">
+  <option value="all">All</option>
+  <option value="TIC">TIC</option>
+  <option value="BIT">BIT</option>
+</select></center>
+    <br>
+    <label for="pro">الفرز حسب : </label>
+    <input type="radio" id="iduser" name="sortmytable" onchange="sortTable()" value="iduser">
+    <label for="id"> رقم المستخدم </label>
+    <input type="radio" id="name" name="sortmytable" onchange="sortTable()" value="name">
+    <label for="name">اسم الطالب</label>
+    <input type="radio" id="Program" name="sortmytable" onchange="sortTable()" value="Program">
+    <label for="Program">البرنامج</label>
+    <table id="myTable">
+        <tr>
+            <th> متسلسل </th>
+            <th> اسم المستخدم </th>
+            <th> اسم الطالب </th>
+            <th> البرنامج </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ali_16711</td>
+            <td>al i</td>
+            <td>BIT</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>mohmad_18898</td>
+            <td>moh mad</td>
+            <td>TIC</td>
+        </tr>
+    </table>
+    <button type="button" onclick="converttableToJosn()">
+convert to Jason</button>
+    <textarea id="w3review" name="w3review" rows="20" cols="200">
+</textarea>
+</body>
+
+</html>

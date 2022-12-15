@@ -1,0 +1,137 @@
+h1 {
+    padding: 22px;
+    background-image: url('1234.jpg');
+    border: 1px solid #dddddd;
+    text-align: center;
+    background-repeat: no-repeat, ;
+    color: #36f495;
+}
+
+h4 {
+    color: #161817;
+    font-size: 200%;
+}
+
+
+/* Bordered form */
+
+form {
+    background-image: url('123.jpg');
+    border: 200px #f1f1f1;
+    background-color: #6883BC;
+    background-repeat: no-repeat, ;
+}
+
+td,
+th {
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 15px;
+}
+
+table {
+    background-color: #0d0f12;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+/* Full-width inputs */
+
+input[type=password],
+input[type=text],
+select {
+    margin: 11px 0;
+    display: inline-block;
+    border: 3px solid rgb(121, 12, 12);
+    width: 100%;
+    padding: 12px 3px;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    padding: 14px 5px;
+    cursor: pointer;
+    background-color: #605a5e;
+    color: rgb(108, 39, 39);
+    width: 100%;
+    margin: 8px 0;
+    border: none;
+    font-size: xx-large;
+}
+
+
+/* Add a hover effect for buttons */
+
+button:hover {
+    opacity: 0.7;
+}
+
+body {
+    background-image: url('123.jpg');
+    background-repeat: no-repeat, ;
+    color: rgb(207, 206, 206);
+    background-color: #79A7D3;
+    font-size: large;
+}
+
+
+/* Add padding to containers */
+
+.container {
+    padding: 16px;
+}
+
+
+/* Extra style for the cancel button (red) */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #36f495;
+}
+
+
+/* Center the avatar image inside this container */
+
+.imgcontainer {
+    text-align: center;
+    margin: 20px 1 120px 1;
+}
+
+
+/* Avatar image */
+
+img.avatar {
+    width: 20%;
+    border-radius: 70%;
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 10px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 10%;
+    }
+}
+
+tr:nth-child(even) {
+    background-color: #df1515;
+}
+
+
+/* The "Forgot password" text */
+
+span.psw {
+    float: right;
+    padding-top: 20px;
+}
